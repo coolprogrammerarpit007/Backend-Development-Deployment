@@ -44,20 +44,20 @@
 
 
 
-number = int(input("Enter Number: "))
+# number = int(input("Enter Number: "))
 
 
-# for i in range(1,number+1):
-#     if i == 1 or i == number:
-#         print("*" * number , end="")
+# # for i in range(1,number+1):
+# #     if i == 1 or i == number:
+# #         print("*" * number , end="")
 
-#     else:
-#         print("*",end="")
-#         print(" "*(number-2),end="")
-#         print("*",end="")
-#     print("")
+# #     else:
+# #         print("*",end="")
+# #         print(" "*(number-2),end="")
+# #         print("*",end="")
+# #     print("")
 
 
-for index in range(10,0,-1):
-    print(f"{number} X {index} = {number * index}")
-    
+# for index in range(10,0,-1):
+#     print(f"{number} X {index} = {number * index}")
+
