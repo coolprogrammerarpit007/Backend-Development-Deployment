@@ -67,3 +67,23 @@
 # result = recursive_sum(5)
 # print("Recursive Sum: ",result)
 
+# String Reversal Using Recursion
+
+
+
+def reverse_string(text):
+    if text == "":
+        return text
+    
+    else:
+        reversed_string =  reverse_string(text[1:]) + text[:1]
+
+    return reversed_string
+
+
+# result = reverse_string("CODE")
+# print(result)
+
+
+
+# https://www.freecodecamp.org/news/python-reverse-string-string-reversal-in-python-explained-with-code-examples/   Article to learn Recursion Stack Concept
