@@ -67,7 +67,7 @@ class Employee:
 
 e = Employee()
 e.a = 78
-e.show()
+# e.show()
 
 
 # e.name = "Arpit Mishra"
@@ -114,7 +114,7 @@ class Temperature:
         self._celcius = value
 
 
-temp = Temperature(25)
+# temp = Temperature(25)
 
 
 class Vector:
@@ -141,4 +141,54 @@ v2 = Vector(5, 7)
 v3 = v1 + v2
 
 # The __str__ method is called to print the result
-print(v3)
+# print(v3)
+
+
+# Problem SET on OOPS
+
+class TwoDVector:
+    def __init__(self,i,j):
+        self.i = i
+        self.j = j
+
+
+    def show(self):
+        print(f"The vector is: {self.i}i + {self.j}j")
+
+
+
+class ThreeDVector(TwoDVector):
+    def __init__(self,i,j,k):
+        super().__init__(i,j)
+        self.k = k
+
+    def show(self):
+        print(f"The vector is: {self.i}i + {self.j}j + {self.k}k")
+
+
+obj1 = TwoDVector(1,2)
+obj2 = ThreeDVector(1,2,3)
+
+# obj1.show()
+# obj2.show()
+
+
+class Employee:
+    def __init__(self,name,salary):
+        self.name = name
+        self.salary = salary
+
+
+    @property
+    def salary(self):
+        return f"Employee {self.name} has {self._salary} Annum"
+    
+    @salary.setter
+    def salary(self,value):
+        if value > 0:
+            self._salary = value
+
+
+employee = Employee("Divyansh",2500000)
+employee.salary = 3500000
+print(employee.salary)
